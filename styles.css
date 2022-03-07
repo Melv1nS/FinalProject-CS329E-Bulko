@@ -1,3 +1,11 @@
+
+.NaviBar
+{
+  width:80%;
+  Text-align:center;
+  float:left;
+}
+
 .Home {
     display: grid;
     grid-template-rows: 1fr 4fr 1fr;
