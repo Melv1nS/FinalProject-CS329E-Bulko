@@ -6,7 +6,7 @@
     display:flex;
 }
 
-.Explore,.AboutUs,.ContactUs,.FAQ{
+.HomeLink,.Explore,.AboutUs,.ContactUs,.FAQ{
     font-family: fantasy;
     width:10%;
     height:15px;
@@ -46,4 +46,9 @@
 
 .signature {
     background-color: #F9858B;
+}
+
+.contactUsText {
+    margin-left: 200px;
+    margin-right: 200px;
 }
