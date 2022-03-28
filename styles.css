@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 nav {
     margin: 0;
     font-family: Arial;
@@ -11,6 +12,40 @@ nav {
     width: 100%;
     height: 40px;
     background-color: #F9858B;
+=======
+.NaviBar
+{
+    width:100%;
+    height:auto;
+    display:flex;
+}
+
+.HomeLink,.Explore,.AboutUs,.ContactUs,.FAQ{
+    font-family: fantasy;
+    width:10%;
+    height:15px;
+    margin:50px;
+}
+
+.centerlogo{
+    widows: 250px;
+    height:250px;
+
+}
+
+.body{
+    font-size: 30px;
+    text-align: center;
+    font-family: fantasy;
+    margin-bottom: 300px;
+}
+
+.Home {
+    font-family: fantasy;
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+    
+>>>>>>> 3ca8d00739ea2909031bd75c99830efa8112c220
 }
 
 .logo {
@@ -32,6 +67,7 @@ nav {
     padding: 8px;
     color: #FFFFFF;
     background-color: #F9858B;
+<<<<<<< HEAD
     text-decoration: none;
     float: left;
     height: 24px;
@@ -44,8 +80,22 @@ nav {
 .Home {
     display: grid;
     grid-template-rows: 1fr 4fr 1fr;
+=======
+    height: 1fr;
+>>>>>>> 3ca8d00739ea2909031bd75c99830efa8112c220
 }
 
 .footer {
+    font-family: fantasy;
+    display: grid;
+    grid-template-rows: 1fr 1fr;    
+}
+
+.signature {
     background-color: #F9858B;
+}
+
+.contactUsText {
+    margin-left: 200px;
+    margin-right: 200px;
 }
