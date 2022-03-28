@@ -66,7 +66,6 @@ nav {
     padding: 8px;
     color: #FFFFFF;
     background-color: #F9858B;
-<<<<<<< HEAD
     text-decoration: none;
     float: left;
     height: 24px;
@@ -79,9 +78,7 @@ nav {
 .Home {
     display: grid;
     grid-template-rows: 1fr 4fr 1fr;
-=======
     height: 1fr;
->>>>>>> 3ca8d00739ea2909031bd75c99830efa8112c220
 }
 
 .footer {
