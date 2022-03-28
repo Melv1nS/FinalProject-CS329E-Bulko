@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <title>Foodies</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="This is the webpage of Foodies">
+   <meta name="author" content="Sean, Melvin, Keshav, Saahir">
+
+   <link rel="stylesheet" href="styles.css">
+   <style type = "text/css">
+    .img1 {position: absolute; top: 130px; left: 150px; z-index: 0;}
+    .img2 {position: absolute; top: 130px; left: 150px; z-index: 0;}
+    .img3 {position: absolute; top: 130px; left: 150px; z-index: 0;}
+    .img4 {position: absolute; top: 500px; left: 150px; z-index: 0;}
+    .img5 {position: absolute; top: 500px; left: 150px; z-index: 0;}
+    .img6 {position: absolute; top: 500px; left: 150px; z-index: 0;}
+    .likeimg1{position: absolute; top: 150px; left: 1100px; z-index: 0;}
+    .likeimg2{position: absolute; top: 520px; left: 1100px; z-index: 0;}
+    .headpic1{position: absolute; top: 150px; left: 750px; z-index: 0;}
+    .headpic2{position: absolute; top: 520px; left: 750px; z-index: 0;}
+    #name1{position: absolute; top: 140px; left: 790px; z-index: 0;}
+    #name2{position: absolute; top: 510px; left: 790px; z-index: 0;}
+    #c1{position: absolute; top: 200px; left: 750px; z-index: 0;}
+    #c2{position: absolute; top: 550px; left: 750px; z-index: 0;}
+    .content{font-family: initial;}
+    .explorebody{border-style: ridge;
+                border-width: 4px;
+            }
+
+    #line {
+        height: .5px;
+        background-color: rgb(32, 34, 42);
+        margin-top: 345px;
+    }
+
+  </style>
+     <script>
+        var top_img1 = "food1";
+        var top_img2 = "food4";
+        var img_src1 = new Array ("food1", "food2", "food3");
+        var img_src2 = new Array ("food4","food5","food6");
+        i = 0;
+
+        setInterval(function changeImg() {
+            
+            var new_img1 = img_src1[i];
+            var new_img2 = img_src2[i];
+
+            if (i < img_src1.length){
+                i++;
+            }
+            if (i == img_src1.length){
+                i = 0;
+            }
+            styleTop1 = document.getElementById(top_img1).style;
+            styleNew1 = document.getElementById(new_img1).style;
+
+            styleTop2 = document.getElementById(top_img2).style;
+            styleNew2 = document.getElementById(new_img2).style;
+
+            styleTop1.zIndex = "0";
+            styleNew1.zIndex = "10";
+
+            styleTop2.zIndex = "0";
+            styleNew2.zIndex = "10";
+
+            top_img1 = new_img1;
+            top_img2 = new_img2;
+
+
+            },3000)
+
+   </script>
+</head> 
+
+<body onload="changeImg()">
+
+<!-- BODY GOES HERE -->
+
+<div class="page-container">
+   <div class="content-wrap">
+      <div class = "header">
+         <!-- LOGO -->
+         <!-- <li class="nav-li"></li> -->
+         <nav>
+            <ul class = "nav-list">
+               <li class="nav-li"><a class = "nav-link" href="index.html"><img class = "logo" src="logo.png" alt="Logo of Foodies"></a></li>
+               <li class="nav-li"><a class = "nav-link" href="explore.html">Explore</a></li>
+               <li class="nav-li"><a class = "nav-link" href="blank.html">About Us</a></li>
+               <li class="nav-li"><a class = "nav-link" href="contactus.html">Contact Us</a></li>
+               <li class="nav-li"><a class = "nav-link" href="faq.html">FAQs</a></li>
+            </ul>
+         </nav>
+
+         <div class = "explorebody">
+            <form action = "">
+                <p>
+                   <img class = "img1"  id = "food1" src = "food1.png"
+                        alt = "(Picture of food1)" width = "500" height = "310" />
+                   <img class = "img2"  id = "food2" src = "food2.png"
+                        alt = "(Picture of food2" width = "500" height = "310" />
+                   <img class = "img3"  id = "food3" src = "food3.png"
+                        alt = "(Picture of food3)" width = "500" height = "310">
+                   <img class = "img4"  id = "food4" src = "food4.png"
+                        alt = "(Picture of food4)" width = "500" height = "310" />
+                   <img class = "img5"  id = "food5" src = "food5.png"
+                        alt = "(Picture of food5" width = "500" height = "310" />
+                   <img class = "img6"  id = "food6" src = "food6.png"
+                        alt = "(Picture of food6)" width = "500" height = "310">
+                </p>
+             </form>
+    
+            <div class="content">
+
+                <img class="likeimg1" id="like1" src="like.png"
+                     alt = "(Picture of like button)" width="30" height = "30" />
+    
+                <img class="likeimg2" id="like2" src="like.png"
+                     alt = "(Picture of like button)" width="30" height = "30" />
+    
+                <img class="headpic1" id="head1" src="head.png"
+                     alt = "(Picture of head pic)" width="30" height = "30" />
+    
+                <img class="headpic2" id="head2" src="head.png"
+                     alt = "(Picture of head pic)" width="30" height = "30" />
+   
+               <div class = user1>
+
+                  <p id="name1">
+                     Alex   
+                  </p>
+
+                  <p id="c1">
+                     <b>Thai Spice</b><br>
+                     <br>
+                     Thai food here is all about balance – achieving the <br>perfect harmony between sweet, sour, hot and salty.<br> 
+                     I like the Pad Thai and Curry specifically. Serving<br> is perfect here as well.
+                  </p>
+                  
+                  <hr id="line"/>
+               </div>
+    
+               <div class = user2>
+                  <p id="name2">
+                     Oliva
+                  </p>
+                  <p id="c2">
+                     <b>Grill Garden</b><br>
+                     <br>
+                     There are all kinds of barbecue you can imagine. The <br>gilled dronestick is especially good. Parking is 
+                     also <br>accessible around the restaurant.
+                  </p>
+               </div>
+
+            </div>
+        </div>
+      </div>
+   </div>
+
+   <footer>
+      <p>3/6/2022 Melvin, Keshav, Saahir, Sean</p>
+   </footer>
+
+</div>
+    
+   
+</div>
+
+</body>
+</html>

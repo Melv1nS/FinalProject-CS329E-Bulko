@@ -84,9 +84,25 @@ footer {
     
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 99%;
     height: 2.5rem;
     /* margin-bottom: -50px; */
+}
+
+.contactUsText {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.post {
+    font-size: 30px;
+    text-align: center;
+    font-family: fantasy;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .page-container {
