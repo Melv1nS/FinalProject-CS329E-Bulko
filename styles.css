@@ -94,3 +94,15 @@ footer {
     margin-left: 200px;
     margin-right: 200px;
 }
+
+.post {
+    font-size: 30px;
+    text-align: center;
+    font-family: fantasy;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
