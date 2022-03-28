@@ -1,11 +1,11 @@
-
-
 nav {
     margin: 0;
     font-family: Arial;
     font-size: 100%;
     width: 100%;
     overflow: hidden;
+    top: 0;
+    left: 0;
 }
 
 .header {
@@ -38,7 +38,6 @@ nav {
     font-size: 30px;
     text-align: center;
     font-family: fantasy;
-    margin-bottom: 300px;
 }
 
 .Home {
@@ -81,14 +80,14 @@ nav {
     height: 1fr;
 }
 
-.footer {
-    font-family: fantasy;
+footer {
     display: grid;
-    grid-template-rows: 1fr 1fr;    
-}
-
-.signature {
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
     background-color: #F9858B;
+    color: white;
+    /* margin-bottom: -50px; */
 }
 
 .contactUsText {
