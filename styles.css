@@ -89,6 +89,22 @@ footer {
     /* margin-bottom: -50px; */
 }
 
+.contactUsText {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.post {
+    font-size: 30px;
+    text-align: center;
+    font-family: fantasy;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .page-container {
     position: relative;
     min-height: 100vh;
@@ -96,4 +112,14 @@ footer {
 
 .content-wrap {
     padding-bottom: 2.5rem; 
+}
+
+.headd{
+    font-size: 50px;
+    text-align: center;
+    font-family: fantasy;
+}
+
+.backcolor {
+    background-color: #C3B1E1;
 }
