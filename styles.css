@@ -108,6 +108,7 @@ footer {
 .page-container {
     position: relative;
     min-height: 100vh;
+    background-color: #ffe4e4;
 }
 
 .content-wrap {
@@ -121,5 +122,11 @@ footer {
 }
 
 .backcolor {
-    background-color: #C3B1E1;
+    background-color: #ffe4e4;
 }
+
+.boddy{
+    font-size: 30px;
+    text-align: center;
+    font-family: fantasy;
+} 
