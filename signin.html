@@ -7,6 +7,54 @@
     <link rel="stylesheet" href="styles.css">
 </head> 
 
+<script>
+  function usercheck(u, p1){
+
+u2 = [u.split('')];
+p = [p1.split('')];
+
+ulen = u.length;
+plen = p1.length;
+
+var letterNum = /^[0-9a-zA-Z]+$/;
+
+if (ulen > 10 || ulen < 6 || isNaN(u2[0][0])==false) {
+    alert("Invalid username or password");
+}
+else if(u.match(letterNum)==false){
+    alert("Invalid username or password");
+}
+
+else if (plen > 10 || plen < 6){
+    alert("Invalid username or password");
+}
+
+else if (p1.match(letterNum)==false){
+    alert("Invalid username or password");
+}
+
+else if(hasLowerCase(p1)==false || hasUpperCase(p1)==false || hasNum(p1)==false) {
+    alert("Invalid username or passwrod")
+}
+
+else {
+    alert("User validated")
+}
+
+}
+
+function hasLowerCase(s) {
+return (/[a-z]/.test(s));
+}
+
+function hasUpperCase(s) {
+return (/[A-Z]/.test(s));
+}
+
+function hasNum(s){
+return (/[0-9]/.test(s));
+}
+</script>
 
 <body>
   <div class="page-container">
@@ -38,8 +86,9 @@
               <label for="fname">Email or username:</label><br>
               <input type="text" id="user" name="user"><br>
               <label for="lname">Password:</label><br>
-              <input type="text" id="pw" name="pw"><br>
-              <br><input type="submit" value="Sign in">
+              <input type="password" id="pw" name="pw"><br>
+              <br><input type="button" onclick="usercheck(document.getElementById('user').value, 
+              document.getElementById('pw').value)" value="Sign in">
             </form>     
         
             <h2 style='font-family: oswald;'>If you have not created an account yet, you can sign up <a href="signup.html">here!</a>
@@ -51,7 +100,7 @@
       </div>
 
       <footer>
-        <p>3/6/2022 Melvin, Keshav, Saahir, Sean</p>
+        <p>3/28/2022 Melvin, Keshav, Saahir, Sean</p>
       </footer>
       
     </div>
