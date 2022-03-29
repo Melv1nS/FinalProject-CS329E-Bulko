@@ -24,10 +24,10 @@ nav {
     display:flex;
 }
 
-/* .centerlogo{
-    widows: 250px;
-    height:250px;
-} */
+.centerlogo{
+    width: 15vw;
+    height:20vh;
+}
 
 /* .body{
     font-size: 30px;
@@ -72,6 +72,8 @@ nav {
 .home-content {
     text-align: center;
     margin-top: 10rem;
+    font-family: initial;
+    font-size: 30px;
 }
 
 footer {
@@ -97,7 +99,7 @@ footer {
 .post {
     font-size: 30px;
     text-align: center;
-    font-family: fantasy;
+    font-family: initial;
 }
 
 .centered {
@@ -118,7 +120,7 @@ footer {
 .headd{
     font-size: 50px;
     text-align: center;
-    font-family: fantasy;
+    font-family: initial;
 }
 
 .backcolor {
@@ -128,5 +130,8 @@ footer {
 .boddy{
     font-size: 30px;
     text-align: center;
-    font-family: fantasy;
+    font-family: initial;
 } 
+.faq {
+    font-style: initial;
+}
