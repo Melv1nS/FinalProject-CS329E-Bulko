@@ -69,6 +69,12 @@ nav {
     background-color: #BD5059;
 }
 
+.current-link {
+    background-color: #BD5059;
+}
+
+
+
 .home-content {
     text-align: center;
     margin-top: 10rem;
