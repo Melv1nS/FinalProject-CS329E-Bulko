@@ -64,9 +64,6 @@ return (/[0-9]/.test(s));
   
   $pf = explode("\n", file_get_contents("signup.txt"));
   
-  // for ($i=0; $i<count($pf);$i++){
-  // echo($pf[$i]."<br>");
-  // }
   
   if (isset($_POST["btn1"])){
       
