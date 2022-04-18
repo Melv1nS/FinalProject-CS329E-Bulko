@@ -77,7 +77,7 @@ return (/[0-9]/.test(s));
           $up = $user . ":" . $pass;
           for ($i=0; $i<count($pf);$i++){
               if($up == $pf[$i]){
-                  // echo("in login true"."<br>");
+                  
                   $login_state = true;
                   setcookie("user_pass",$up,time()+120,"/");
                   header('Location: explore.html');
