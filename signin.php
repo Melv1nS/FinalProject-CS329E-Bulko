@@ -56,6 +56,51 @@ return (/[0-9]/.test(s));
 }
 </script>
 
+<?php
+  $user = $_POST['user'];
+  $pass = $_POST['pw'];
+  $login_state = false;
+  echo($login_state);
+  // echo($user);
+  // echo($pass);
+  
+  $pf = explode("\n", file_get_contents("signup.txt"));
+  
+  // for ($i=0; $i<count($pf);$i++){
+  // echo($pf[$i]."<br>");
+  // }
+  
+  if (isset($_POST["btn1"])){
+      // echo("in submit"."<br>");
+      if(empty($user || $pass)){
+          echo("<script>alert('There are empty fields!')</script>");
+      }
+      else{
+          $up = $user . ":" . $pass;
+          // echo($up."<br>");
+          for ($i=0; $i<count($pf);$i++){
+              if($up == $pf[$i]){
+                  // echo("in login true"."<br>");
+                  $login_state = true;
+                  setcookie("user_pass",$up,time()+120,"/");
+                  header('Location: explore.html');
+              }
+      
+          }
+          if ($login_state == false){
+              echo("<script>alert('Wrong Username or Password')</script>"); 
+          }
+  
+      }
+  }
+
+
+?>
+
+
+
+
+
 <body>
   <div class="page-container">
     <div class="content-wrap">

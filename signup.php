@@ -1,3 +1,4 @@
+<html>
 <head>
     <title>Foodies</title>
     <meta charset="UTF-8">
@@ -6,6 +7,34 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     <link rel="stylesheet" href="styles.css">
 </head>
+
+<?php
+$user = $_POST['user'];
+$pass = $_POST['pw'];
+$repass = $_POST['pwconfirm'];
+
+if (isset($_POST['signup'])){
+  if(empty($user || $pass || $repass)){
+    echo("<script>alert('There are still empty fields!')</script>");
+  }
+  else{
+    if (count($user)<6 && count($user)>11){
+      echo("<script>alert('Username must be 6-11 digits!')</script>");
+    }
+    if ($pass != $repass){
+      echo("<script>alert('Passwords entered are incompatible!')</script>");
+    }
+    else{
+      $up = $user . ":" . $pass . "\n";
+      $myfile = fopen("testfile.txt", "w");
+      fwrite($myfile, $up);
+      fclose($myfile);
+    }
+  }
+}
+
+?>
+
 
 <body>
   <div class="page-container">
@@ -34,15 +63,15 @@
             <form>
               <label for="user">Username:</label><br>
               <input type="text" id="user" name="user"><br>
-              <label for="email">Email address:</label><br>
-              <input type="text" id="email" name="email">
+              <!-- <label for="email">Email address:</label><br>
+              <input type="text" id="email" name="email"> -->
               <br><label for="pw">Password:</label><br>
               <input type="text" id="pw" name="pw">
               <label for="dd"><br>Confirm your password:</label><br>
               <input type="text" id="pwconfirm" name="pwconfirm">
               <label for="dob"><br>Date of Birth:</label><br>
               <input type="date" id="birth" name="birth"><br>
-              <br><input type="submit" value="Sign up">
+              <br><input type="submit" value="Sign up" name="signup">
             </form>     
         
             <h2 style='font-family: oswald;'>If you already have created an account, you can sign in <a href="signin.html">here!</a>
@@ -58,7 +87,7 @@
 
   </div>
 </body>
-
+</html>
 
 
 
