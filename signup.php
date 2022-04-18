@@ -1,3 +1,14 @@
+<html>
+
+<head>
+    <title>Foodies</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is the webpage of Foodies">
+    <meta name="author" content="Sean, Melvin, Keshav, Saahir">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
 <?php
 $user = $_POST['user'];
 $pass = $_POST['pw'];
@@ -20,13 +31,10 @@ if (isset($_POST['signup'])){
       $myfile = fopen("signup.txt", "w");
       fwrite($myfile, $up);
       fclose($myfile);
+      header("Location: index.html");
     }
   }
 }
 
 ?>
-
-
-
-
 
