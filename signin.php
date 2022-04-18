@@ -69,7 +69,7 @@ return (/[0-9]/.test(s));
   // }
   
   if (isset($_POST["btn1"])){
-      // echo("in submit"."<br>");
+      
       if(empty($user || $pass)){
           echo("<script>alert('There are empty fields!')</script>");
       }
