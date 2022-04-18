@@ -19,17 +19,15 @@
         <div class = "header">
           <!-- LOGO -->
           <!-- <li class="nav-li"></li> -->
-          <nav>
-            <ul class = "nav-list">
-               <li class="nav-li"><a class = "nav-link" href="index.html"><img class = "logo" src="logo.png" alt="Logo of Foodies"></a></li>
-               <li class="nav-li"><a class = "nav-link" href="explore.html">Explore</a></li>
-               <li class="nav-li"><a class = "nav-link" href="contactus.html">Contact Us</a></li>
-               <li class="nav-li"><a class = "nav-link current-link" href="faq.html">FAQs</a></li>
-               <li class="nav-li"><a class = "nav-link" href="signin.html">Sign In</a></li>
-               <li class="nav-li"><a class = "nav-link" href="signup.html">Sign Up</a></li>
-               <li class="nav-li"><a class = "nav-link" href="post.html">Create Post</a></li>
-            </ul>
-         </nav>
+          <div class="topnav">
+               <a href="home.php"><img class = "logo" src="logo.png" alt="Logo of Foodies"></a>
+               <a href="explore.php">Explore</a>
+               <a href="contactus.php">Contact</a>
+               <a class="active" href="faq.php">FAQs</a>
+               <a href="post.php">Create Post</a>
+               <?php echo "<p class='topnav-name push'> Hello " . $_COOKIE["user"] . "</p>"?>
+               <a href="signout.php">Sign Out</a>
+            </div>
         </div>
   
         <div class = "FAQ">

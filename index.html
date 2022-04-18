@@ -1,77 +1,110 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
 <head>
-   <title>Foodies</title>
-   <meta charset="UTF-8">
-   <meta name="description" content="This is the webpage of Foodies">
-   <meta name="author" content="Sean, Melvin, Keshav, Saahir">
-   <link rel="stylesheet" href="styles.css">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <title>Foodies</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is the webpage of Foodies">
+    <meta name="author" content="Sean, Melvin, Keshav, Saahir">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="styles.css">
+    
 </head> 
 
+<script>
+    function usercheck(u, p1){
+
+        u2 = [u.split('')];
+        p = [p1.split('')];
+
+        ulen = u.length;
+        plen = p1.length;
+
+        var letterNum = /^[0-9a-zA-Z]+$/;
+
+        if (ulen > 10 || ulen < 6 || isNaN(u2[0][0])==false) {
+            alert("Invalid username or password");
+        }
+        else if(u.match(letterNum)==false){
+            alert("Invalid username or password");
+        }
+
+        else if (plen > 10 || plen < 6){
+            alert("Invalid username or password");
+        }
+
+        else if (p1.match(letterNum)==false){
+            alert("Invalid username or password");
+        }
+
+        else if(hasLowerCase(p1)==false || hasUpperCase(p1)==false || hasNum(p1)==false) {
+            alert("Invalid username or passwrod")
+        }
+
+        else {
+            alert("User validated")
+        }
+    }
+
+    function hasLowerCase(s) {
+        return (/[a-z]/.test(s));
+    }
+
+    function hasUpperCase(s) {
+        return (/[A-Z]/.test(s));
+    }
+
+    function hasNum(s){
+        return (/[0-9]/.test(s));
+    }
+
+</script>
+
 <body>
-<!-- BODY GOES HERE -->
-
-   <div class = "page-container">
-
+    <div class="page-container">
       <div class="content-wrap">
-         <div class = "header">
-            <!-- LOGO -->
-            <!-- <li class="nav-li"></li> -->
-            <nav>
-               <ul class = "nav-list">
-                  <li class="nav-li"><a class = "nav-link current-link" href="index.html"><img class = "logo" src="logo.png" alt="Logo of Foodies"></a></li>
-                  <li class="nav-li"><a class = "nav-link" href="explore.html">Explore</a></li>
-                  <li class="nav-li"><a class = "nav-link" href="contactus.html">Contact Us</a></li>
-                  <li class="nav-li"><a class = "nav-link" href="faq.html">FAQs</a></li>
-                  <li class="nav-li"><a class = "nav-link" href="signin.html">Sign In</a></li>
-                  <li class="nav-li"><a class = "nav-link" href="signup.html">Sign Up</a></li>
-                  <li class="nav-li"><a class = "nav-link" href="post.html">Create Post</a></li>
-               </ul>
-            </nav>
-   
-         </div>
-         
-         <div class = "home-content">
-            <img class="centerlogo" src="logo.png" alt="logo in the center">
-            <p>
-               Food with friends. It doesn’t get any better than this.
-            </p>
-   
-            <p>
-               Foodies unite! There's finally a social media centered around food pictures and food pictures only! 
-               <br>No more wasting time scrolling through countless memes and vacation pics just to find the good stuff!
-               <br>Connect with your friends and see all the cool resturaunts they go to and the dishes they get!
-               <br>Create an account now to start your foodie adventure!
-            </p>
-         </div>
+        <div class="Home" style='font-family: oswald;'>
+          <div class = "header">
+               <!-- LOGO -->
+               <!-- <li class="nav-li"></li> -->
+               <nav>
+                  <!-- <ul class = "nav-list">
+                     <li class="nav-li"><a class = "nav-link" href="home.html"><img class = "logo" src="logo.png" alt="Logo of Foodies"></a></li>
+                     <li class="nav-li"><a class = "nav-link" href="explore.html">Explore</a></li>
+                     <li class="nav-li"><a class = "nav-link" href="contactus.html">Contact Us</a></li>
+                     <li class="nav-li"><a class = "nav-link" href="faq.html">FAQs</a></li>
+                     <li class="nav-li"><a class = "nav-link current-link" href="signin.html">Sign In</a></li>
+                     <li class="nav-li"><a class = "nav-link" href="signup.html">Sign Up</a></li>
+                     <li class="nav-li"><a class = "nav-link" href="post.html">Create Post</a></li>
+                  </ul> -->
+               </nav>
+          </div>   
+          
+          <div class = "boddy" style='font-family: oswald;'>
+              <h1>Sign In!</h1>
+              <form method="POST" action="signin.php">
 
+                <label for="fname">Email or username:</label><br>
+                <input type="text" id="user" name="user"><br>
+
+                <label for="lname">Password:</label><br>
+                <input type="password" id="pw" name="pw"><br>
+
+                <br><input type="submit" value="Sign in">
+              </form>
+              <h2 style='font-family: oswald;'>
+                If you have not created an account yet, you can sign up <a href="signup.html">here!</a>
+              </h2>   
+          </div>
+      
+      
+        </div>
+  
+        <footer>
+          <p>3/28/2022 Melvin, Keshav, Saahir, Sean</p>
+        </footer>
+        
       </div>
-      
-      <!-- <div class="content-wrap"> 
-         <div class = "body">
-      
-            <img class="centerlogo" src="logo.png" alt="logo in the center">
-            <p>Food with friends.<br>It doesn’t get any better than this.</p>
-      
-            <p>
-               Foodies unite! There's finally a social media centered around food pictures and food pictures only! 
-               <br>No more wasting time scrolling through countless memes and vacation pics just to find the good stuff!
-               <br>Connect with your friends and see all the cool resturaunts they go to and the dishes they get!
-               <br>Create an account now to start your foodie adventure!
-            </p>
-            
-         </div>
-      </div> -->
-      
-      <footer>
-         <p>3/28/2022 Melvin, Keshav, Saahir, Sean</p>
-      </footer>
-   </div>
- 
-</div>
-
+    </div>
+  
 </body>
-</html>
+  
+  
+  
