@@ -61,8 +61,6 @@ return (/[0-9]/.test(s));
   $pass = $_POST['pw'];
   $login_state = false;
   echo($login_state);
-  // echo($user);
-  // echo($pass);
   
   $pf = explode("\n", file_get_contents("signup.txt"));
   
