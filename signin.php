@@ -61,34 +61,31 @@ return (/[0-9]/.test(s));
   $pass = $_POST['pw'];
   $login_state = false;
   echo($login_state);
-  
+
   $pf = explode("\n", file_get_contents("signup.txt"));
   
   
   if (isset($_POST["btn1"])){
       
-      if(empty($user || $pass)){
-          echo("<script>alert('There are empty fields!')</script>");
-      }
-      else{
-          $up = $user . ":" . $pass;
-          for ($i=0; $i<count($pf);$i++){
-              if($up == $pf[$i]){
-                  
-                  $login_state = true;
-                  setcookie("user_pass",$up,time()+120,"/");
-                  header('Location: explore.html');
-              }
-      
-          }
-          if ($login_state == false){
-              echo("<script>alert('Wrong Username or Password')</script>"); 
+    if(empty($user || $pass)){
+      echo("<script>alert('There are empty fields!')</script>");
+    }
+    else{
+      $up = $user . ":" . $pass;
+      for ($i=0; $i<count($pf);$i++){
+          if($up == $pf[$i]){
+              
+              $login_state = true;
+              setcookie("user_pass",$up,time()+120,"/");
+              header('Location: explore.html');
           }
   
       }
+      if ($login_state == false){
+          echo("<script>alert('Wrong Username or Password')</script>"); 
+      }
+    }
   }
-
-
 ?>
 
 
@@ -109,14 +106,11 @@ return (/[0-9]/.test(s));
                    <li class="nav-li"><a class = "nav-link" href="contactus.html">Contact Us</a></li>
                    <li class="nav-li"><a class = "nav-link" href="faq.html">FAQs</a></li>
                    <li class="nav-li"><a class = "nav-link current-link" href="signin.html">Sign In</a></li>
-                   <li class="nav-li"><a class = "nav-link" href="signup.html">Sign Up</a></li>
+                   <li class="nav-li"><a class = "nav-link" href="signup.php">Sign Up</a></li>
                    <li class="nav-li"><a class = "nav-link" href="post.html">Create Post</a></li>
-                   
                 </ul>
              </nav>
-    
-        </div>
-        
+        </div>   
         
         <div class = "boddy" style='font-family: oswald;'>
           <center>
@@ -128,9 +122,8 @@ return (/[0-9]/.test(s));
               <input type="password" id="pw" name="pw"><br>
               <br><input type="button" onclick="usercheck(document.getElementById('user').value, 
               document.getElementById('pw').value)" value="Sign in">
-            </form>     
-        
-            <h2 style='font-family: oswald;'>If you have not created an account yet, you can sign up <a href="signup.html">here!</a>
+            </form>
+            <h2 style='font-family: oswald;'>If you have not created an account yet, you can sign up <a href="signup.php">here!</a>
             </h2>   
           </center>
         </div>
