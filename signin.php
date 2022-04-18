@@ -75,7 +75,6 @@ return (/[0-9]/.test(s));
       }
       else{
           $up = $user . ":" . $pass;
-          // echo($up."<br>");
           for ($i=0; $i<count($pf);$i++){
               if($up == $pf[$i]){
                   // echo("in login true"."<br>");
