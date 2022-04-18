@@ -108,8 +108,8 @@ return (/[0-9]/.test(s));
                    <li class="nav-li"><a class = "nav-link" href="explore.html">Explore</a></li>
                    <li class="nav-li"><a class = "nav-link" href="contactus.html">Contact Us</a></li>
                    <li class="nav-li"><a class = "nav-link" href="faq.html">FAQs</a></li>
-                   <li class="nav-li"><a class = "nav-link current-link" href="signin.html">Sign In</a></li>
-                   <li class="nav-li"><a class = "nav-link" href="signup.html">Sign Up</a></li>
+                   <li class="nav-li"><a class = "nav-link current-link" href="signin.php">Sign In</a></li>
+                   <li class="nav-li"><a class = "nav-link" href="signup.php">Sign Up</a></li>
                    <li class="nav-li"><a class = "nav-link" href="post.html">Create Post</a></li>
                    
                 </ul>
