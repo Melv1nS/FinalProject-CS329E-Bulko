@@ -16,7 +16,8 @@ if (isset($_POST['signup'])){
     }
     else{
       $up = $user . ":" . $pass . "\n";
-      $myfile = fopen("testfile.txt", "w");
+      echo($up);
+      $myfile = fopen("signup.txt", "w");
       fwrite($myfile, $up);
       fclose($myfile);
     }
