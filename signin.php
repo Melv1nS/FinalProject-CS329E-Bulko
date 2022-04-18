@@ -1,97 +1,37 @@
-<head>
-    <title>Foodies</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="This is the webpage of Foodies">
-    <meta name="author" content="Sean, Melvin, Keshav, Saahir">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-    <link rel="stylesheet" href="styles.css">
-</head> 
-
-<script>
-  function usercheck(u, p1){
-
-u2 = [u.split('')];
-p = [p1.split('')];
-
-ulen = u.length;
-plen = p1.length;
-
-var letterNum = /^[0-9a-zA-Z]+$/;
-
-if (ulen > 10 || ulen < 6 || isNaN(u2[0][0])==false) {
-    alert("Invalid username or password");
-}
-else if(u.match(letterNum)==false){
-    alert("Invalid username or password");
-}
-
-else if (plen > 10 || plen < 6){
-    alert("Invalid username or password");
-}
-
-else if (p1.match(letterNum)==false){
-    alert("Invalid username or password");
-}
-
-else if(hasLowerCase(p1)==false || hasUpperCase(p1)==false || hasNum(p1)==false) {
-    alert("Invalid username or passwrod")
-}
-
-else {
-    alert("User validated")
-}
-
-}
-
-function hasLowerCase(s) {
-return (/[a-z]/.test(s));
-}
-
-function hasUpperCase(s) {
-return (/[A-Z]/.test(s));
-}
-
-function hasNum(s){
-return (/[0-9]/.test(s));
-}
-</script>
-
 <?php
   $user = $_POST['user'];
   $pass = $_POST['pw'];
   $login_state = false;
   echo($login_state);
-  
+
   $pf = explode("\n", file_get_contents("signup.txt"));
   
   
   if (isset($_POST["btn1"])){
       
-      if(empty($user || $pass)){
-          echo("<script>alert('There are empty fields!')</script>");
-      }
-      else{
-          $up = $user . ":" . $pass;
-          for ($i=0; $i<count($pf);$i++){
-              if($up == $pf[$i]){
-                  
-                  $login_state = true;
-                  setcookie("user_pass",$up,time()+120,"/");
-                  header('Location: explore.html');
-              }
-      
-          }
-          if ($login_state == false){
-              echo("<script>alert('Wrong Username or Password')</script>"); 
+    if(empty($user || $pass)){
+      echo("<script>alert('There are empty fields!')</script>");
+    }
+    else{
+      $up = $user . ":" . $pass;
+      for ($i=0; $i<count($pf);$i++){
+          if($up == $pf[$i]){
+              
+              $login_state = true;
+              setcookie("user_pass",$up,time()+120,"/");
+              header('Location: explore.html');
           }
   
       }
+      if ($login_state == false){
+          echo("<script>alert('Wrong Username or Password')</script>"); 
+      }
+    }
   }
-
-
 ?>
 
 
+<<<<<<< HEAD
 
 
 
@@ -148,3 +88,5 @@ return (/[0-9]/.test(s));
 </body>
 
 
+=======
+>>>>>>> 6c096ca5c19cbd17107a6f0b4f341022deeb9f25
