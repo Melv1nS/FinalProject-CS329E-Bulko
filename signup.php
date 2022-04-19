@@ -16,7 +16,7 @@
     fclose($myfile);
 
     //make a cookie
-
+    setcookie("user", $user, time()+3600, "/");
     header("Location: home.php");
   }
   else {
