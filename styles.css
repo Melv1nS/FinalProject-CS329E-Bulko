@@ -2,6 +2,57 @@
     min-height: 100%;
 }
 
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #F9858B;;
+    overflow: hidden;
+    display: flex;
+}
+
+.topnav-name {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.push {
+    margin-left: auto;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #BD5059;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #BD5059;
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right !important;
+}
+
+.username {
+    color: white;
+    text-align: right;
+}
+
 nav {
     font-family: Arial;
     font-size: 100%;
