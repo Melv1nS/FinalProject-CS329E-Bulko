@@ -21,7 +21,7 @@
          <!-- LOGO -->
          <!-- <li class="nav-li"></li> -->
          <div class="topnav">
-            <a href="home.php"><img class = "logo" src="logo.png" alt="Logo of Foodies"></a>
+            <a href="home.php"><img class = "logo" src="images/logo.png" alt="Logo of Foodies"></a>
             <a href="explore.php">Explore</a>
             <a class="active" href="contactus.php">Contact</a>
             <a href="faq.php">FAQs</a>

@@ -86,7 +86,7 @@
          <!-- LOGO -->
          <!-- <li class="nav-li"></li> -->
          <div class="topnav">
-            <a href="home.php"><img class = "logo" src="logo.png" alt="Logo of Foodies"></a>
+            <a href="home.php"><img class = "logo" src="images/logo.png" alt="Logo of Foodies"></a>
             <a class="active" href="explore.php">Explore</a>
             <a href="contactus.php">Contact</a>
             <a href="faq.php">FAQs</a>
@@ -98,33 +98,33 @@
          <div class = "explorebody">
             <form action = "">
                 <p>
-                   <img class = "img1"  id = "food1" src = "food1.png"
+                   <img class = "img1"  id = "food1" src = "images/food1.png"
                         alt = "(Picture of food1)" width = "500" height = "310" />
-                   <img class = "img2"  id = "food2" src = "food2.png"
+                   <img class = "img2"  id = "food2" src = "images/food2.png"
                         alt = "(Picture of food2" width = "500" height = "310" />
-                   <img class = "img3"  id = "food3" src = "food3.png"
+                   <img class = "img3"  id = "food3" src = "images/food3.png"
                         alt = "(Picture of food3)" width = "500" height = "310">
-                   <img class = "img4"  id = "food4" src = "food4.png"
+                   <img class = "img4"  id = "food4" src = "images/food4.png"
                         alt = "(Picture of food4)" width = "500" height = "310" />
-                   <img class = "img5"  id = "food5" src = "food5.png"
+                   <img class = "img5"  id = "food5" src = "images/food5.png"
                         alt = "(Picture of food5" width = "500" height = "310" />
-                   <img class = "img6"  id = "food6" src = "food6.png"
+                   <img class = "img6"  id = "food6" src = "images/food6.png"
                         alt = "(Picture of food6)" width = "500" height = "310">
                 </p>
              </form>
     
             <div class="content">
 
-                <img class="likeimg1" id="like1" src="like.png"
+                <img class="likeimg1" id="like1" src="images/like.png"
                      alt = "(Picture of like button)" width="30" height = "30" />
     
-                <img class="likeimg2" id="like2" src="like.png"
+                <img class="likeimg2" id="like2" src="images/like.png"
                      alt = "(Picture of like button)" width="30" height = "30" />
     
-                <img class="headpic1" id="head1" src="head.png"
+                <img class="headpic1" id="head1" src="images/head.png"
                      alt = "(Picture of head pic)" width="30" height = "30" />
     
-                <img class="headpic2" id="head2" src="head.png"
+                <img class="headpic2" id="head2" src="images/head.png"
                      alt = "(Picture of head pic)" width="30" height = "30" />
    
                <div class = user1>

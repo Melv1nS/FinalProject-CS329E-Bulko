@@ -9,6 +9,7 @@
    <meta name="author" content="Sean, Melvin, Keshav, Saahir">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
    <link rel="stylesheet" href="styles.css">
+   <script src="accordian.js"></script>
 </head> 
 
 
@@ -20,7 +21,7 @@
           <!-- LOGO -->
           <!-- <li class="nav-li"></li> -->
           <div class="topnav">
-               <a href="home.php"><img class = "logo" src="logo.png" alt="Logo of Foodies"></a>
+               <a href="home.php"><img class = "logo" src="images/logo.png" alt="Logo of Foodies"></a>
                <a href="explore.php">Explore</a>
                <a href="contactus.php">Contact</a>
                <a class="active" href="faq.php">FAQs</a>
@@ -31,6 +32,8 @@
         </div>
   
         <div class = "FAQ">
+
+
           <h1>FAQs</h1>
             
           <h2>Can I post non-food pictures?</h2>
