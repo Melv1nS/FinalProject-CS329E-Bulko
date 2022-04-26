@@ -5,7 +5,7 @@
   $pf = explode("\n", file_get_contents("signup.txt"));
   $login_state = false;
 
-  if(empty($user || $pass)){
+  if(empty($user) || empty($pass)){
     echo("<script>alert('There are empty fields!')</script>");
   }
   else{

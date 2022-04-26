@@ -8,7 +8,11 @@
    <meta name="description" content="This is the webpage of Foodies">
    <meta name="author" content="Sean, Melvin, Keshav, Saahir">
 
+   <link href="bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet">
+   <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"> -->
    <link rel="stylesheet" href="styles.css">
+   
    <style type = "text/css">
     .img1,.img2,.img3 {position: absolute; top: 70px; left: 150px; z-index: 0;}
     .img4,.img5,.img6 {position: absolute; top: 430px; left: 150px; z-index: 0;}
@@ -30,10 +34,6 @@
         height: .5px;
         background-color: rgb(32, 34, 42);
         margin-top: 365px;
-    }
-
-    footer{
-       position:absolute; top: 750px; 
     }
 
   </style>
@@ -76,98 +76,114 @@
    </script>
 </head> 
 
-<body onload="changeImg()">
+<body class="d-flex flex-column min-vh-100">
 
-<!-- BODY GOES HERE -->
+<!-- START HEADER -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+   <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+         <li class="nav-item">
+            <a class="nav-link" href="home.php"><img src="images/blacklogo.png" width="30" height="30" alt="" /></a>
+         </li>
+         <li class="nav-item active">
+            <a class="nav-link" href="explore.php">Explore</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="contactus.php">Contact</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="faq.php">FAQ</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" style="color: white" href="post.php">Create Post</a>
+         </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+         <li class="nav-item">
+            <?php 
+               echo "<a class='nav-link disabled'> Hello " . $_COOKIE["user"] . "</a>"
+            ?>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="signout.php"> Sign Out</a>
+         </li>
+      </ul>
+  </div>
+</nav>
 
-<div class="page-container">
-   <div class="content-wrap">
-      <div class = "header">
-         <!-- LOGO -->
-         <!-- <li class="nav-li"></li> -->
-         <div class="topnav">
-            <a href="home.php"><img class = "logo" src="images/logo.png" alt="Logo of Foodies"></a>
-            <a class="active" href="explore.php">Explore</a>
-            <a href="contactus.php">Contact</a>
-            <a href="faq.php">FAQs</a>
-            <a href="post.php">Create Post</a>
-            <?php echo "<p class='topnav-name push'> Hello " . $_COOKIE["user"] . "</p>"?>
-            <a href="signout.php">Sign Out</a>
+<!-- END HEADER -->
+
+   <div class = "explorebody">
+      <form action = "">
+            <p>
+               <img class = "img1"  id = "food1" src = "images/food1.png"
+                  alt = "(Picture of food1)" width = "500" height = "310" />
+               <img class = "img2"  id = "food2" src = "images/food2.png"
+                  alt = "(Picture of food2" width = "500" height = "310" />
+               <img class = "img3"  id = "food3" src = "images/food3.png"
+                  alt = "(Picture of food3)" width = "500" height = "310">
+               <img class = "img4"  id = "food4" src = "images/food4.png"
+                  alt = "(Picture of food4)" width = "500" height = "310" />
+               <img class = "img5"  id = "food5" src = "images/food5.png"
+                  alt = "(Picture of food5" width = "500" height = "310" />
+               <img class = "img6"  id = "food6" src = "images/food6.png"
+                  alt = "(Picture of food6)" width = "500" height = "310">
+            </p>
+         </form>
+
+      <div class="content">
+
+            <img class="likeimg1" id="like1" src="images/like.png"
+               alt = "(Picture of like button)" width="30" height = "30" />
+
+            <img class="likeimg2" id="like2" src="images/like.png"
+               alt = "(Picture of like button)" width="30" height = "30" />
+
+            <img class="headpic1" id="head1" src="images/head.png"
+               alt = "(Picture of head pic)" width="30" height = "30" />
+
+            <img class="headpic2" id="head2" src="images/head.png"
+               alt = "(Picture of head pic)" width="30" height = "30" />
+
+         <div class = user1>
+
+            <p id="name1">
+               Alex   
+            </p>
+
+            <p id="c1">
+               <b>Thai Spice</b><br>
+               <br>
+               Thai food here is all about balance – achieving the <br>perfect harmony between sweet, sour, hot and salty.<br> 
+               I like the Pad Thai and Curry specifically. Serving<br> is perfect here as well.
+            </p>
+            
+            <hr id="line"/>
          </div>
 
-         <div class = "explorebody">
-            <form action = "">
-                <p>
-                   <img class = "img1"  id = "food1" src = "images/food1.png"
-                        alt = "(Picture of food1)" width = "500" height = "310" />
-                   <img class = "img2"  id = "food2" src = "images/food2.png"
-                        alt = "(Picture of food2" width = "500" height = "310" />
-                   <img class = "img3"  id = "food3" src = "images/food3.png"
-                        alt = "(Picture of food3)" width = "500" height = "310">
-                   <img class = "img4"  id = "food4" src = "images/food4.png"
-                        alt = "(Picture of food4)" width = "500" height = "310" />
-                   <img class = "img5"  id = "food5" src = "images/food5.png"
-                        alt = "(Picture of food5" width = "500" height = "310" />
-                   <img class = "img6"  id = "food6" src = "images/food6.png"
-                        alt = "(Picture of food6)" width = "500" height = "310">
-                </p>
-             </form>
-    
-            <div class="content">
+         <div class = user2>
+            <p id="name2">
+               Oliva
+            </p>
+            <p id="c2">
+               <b>Grill Garden</b><br>
+               <br>
+               There are all kinds of barbecue you can imagine. The <br>gilled dronestick is especially good. Parking is 
+               also <br>accessible around the restaurant.
+            </p>
+         </div>
 
-                <img class="likeimg1" id="like1" src="images/like.png"
-                     alt = "(Picture of like button)" width="30" height = "30" />
-    
-                <img class="likeimg2" id="like2" src="images/like.png"
-                     alt = "(Picture of like button)" width="30" height = "30" />
-    
-                <img class="headpic1" id="head1" src="images/head.png"
-                     alt = "(Picture of head pic)" width="30" height = "30" />
-    
-                <img class="headpic2" id="head2" src="images/head.png"
-                     alt = "(Picture of head pic)" width="30" height = "30" />
-   
-               <div class = user1>
-
-                  <p id="name1">
-                     Alex   
-                  </p>
-
-                  <p id="c1">
-                     <b>Thai Spice</b><br>
-                     <br>
-                     Thai food here is all about balance – achieving the <br>perfect harmony between sweet, sour, hot and salty.<br> 
-                     I like the Pad Thai and Curry specifically. Serving<br> is perfect here as well.
-                  </p>
-                  
-                  <hr id="line"/>
-               </div>
-    
-               <div class = user2>
-                  <p id="name2">
-                     Oliva
-                  </p>
-                  <p id="c2">
-                     <b>Grill Garden</b><br>
-                     <br>
-                     There are all kinds of barbecue you can imagine. The <br>gilled dronestick is especially good. Parking is 
-                     also <br>accessible around the restaurant.
-                  </p>
-               </div>
-
-            </div>
-        </div>
       </div>
    </div>
 
-   <footer>
-      <p>3/28/2022 Melvin, Keshav, Saahir, Sean</p>
+<!-- START FOOTER -->
+   <footer class="mt-auto text-center">
+   <!-- Copyright -->
+      <div class="text-center p-3">
+            3/6/2022 Melvin, Keshav, Saahir, Sean
+      </div>
    </footer>
-
-</div>
-    
-   
-</div>
+<!-- END FOOTER -->
 
 </body>
 </html>

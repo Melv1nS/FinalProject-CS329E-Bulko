@@ -11,9 +11,7 @@
   if(preg_match('/^[a-zA-Z0-9]{5,}$/', $user) && $pass == $repass) { // for english chars + numbers only
     // valid username, alphanumeric & longer than or equals 5 chars
     $up = $user . ":" . $pass . "\n";
-    $myfile = fopen("signup.txt", "w");
-    fwrite($myfile, $up);
-    fclose($myfile);
+    $myfile = file_put_contents('signup.txt', $up.PHP_EOL , FILE_APPEND | LOCK_EX);
 
     //make a cookie
     setcookie("user", $user, time()+3600, "/");

@@ -1,6 +1,124 @@
-.body {
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+/* Sets the background color of the body to blue. Sets font to Rubik */
+
+body {
     min-height: 100%;
+    background-color: white;
+    font-family: 'rubik', sans-serif;
 }
+
+/* Aligns the heading text to the center. */
+ 
+h1 {
+    text-align: center;
+}
+
+.navbar-custom {
+    background-color: #F9858B;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: white;
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    background-color: #BD5059;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #F9858B;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #BD5059;
+    color: white;
+}
+
+/* .nav-item {
+    height: 30px;
+} */
+
+/* Sets the width for the accordion. Sets the margin to 90px on the top and bottom and auto to the left and right */
+
+.accordion {
+    width: 800px;
+    margin: 90px auto;
+    color: black;
+    background-color: white;
+    padding: 45px 45px;
+}
+
+.accordion .container {
+    position: relative;
+    margin: 10px 10px;
+}
+
+/* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
+
+.accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+  
+/* Positions the plus sign 5px from the right. Centers it using the transform property. */
+
+.accordion .label::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+  
+  /* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+  
+  .accordion .content {
+    position: relative;
+    background: white;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 780px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  /* Adds a horizontal line between the contents */
+  
+  .accordion hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid grey;
+  }
+
+  /* Unhides the content part when active. Sets the height */
+
+.accordion .container.active .content {
+    height: 150px;
+  }
+  
+  /* Changes from plus sign to negative sign once active */
+  
+  .accordion .container.active .label::before {
+    content: '-';
+    font-size: 30px;
+  }
 
 
 /* Add a black background color to the top navigation */
@@ -8,15 +126,18 @@
     background-color: #F9858B;;
     overflow: hidden;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .topnav-name {
     float: left;
     color: #f2f2f2;
-    text-align: center;
     padding-right: 10px;
     text-decoration: none;
     font-size: 17px;
+    padding-top: 10px;
 }
 
 .push {
@@ -107,6 +228,20 @@ nav {
 .nav-li {
     float:left;
 }
+
+.navbar-custom {
+    background-color: #F9858B;
+}
+
+.navlink-custom {
+    color: white;
+}
+
+.navitem-custom:hover { 
+    color: #BD5059;
+}
+
+/* 
 .nav-link {
     display: block;
     padding: 8px;
@@ -123,7 +258,7 @@ nav {
 
 .current-link {
     background-color: #BD5059;
-}
+} */
 
 
 
@@ -135,18 +270,8 @@ nav {
 }
 
 footer {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    
     background-color: #F9858B;
     color: white;
-    
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;
-    /* margin-bottom: -50px; */
 }
 
 .contactUsText {
@@ -168,7 +293,7 @@ footer {
 .page-container {
     position: relative;
     min-height: 100vh;
-    background-color: #ffe4e4;
+    /* background-color: #ffe4e4; */
 }
 
 .content-wrap {
