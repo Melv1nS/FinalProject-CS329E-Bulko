@@ -52,6 +52,36 @@
 <!--
     PLACE YOUR CONTENT HERE
 -->
+<div class="d-flex mx-auto align-items-center" style="margin-top: 5%">
+
+    <form method="POST" action="#">
+         <h1>Create Post</h1>
+
+         <!-- Restaurant input -->
+         <div class="form-outline mb-4">
+            <label class="form-label" for="restaurant">Restaurant</label>
+            <input type="text" id="restaurant" name="restaurant" class="form-control" />
+         </div>
+
+
+         <!-- Caption input -->
+         <div class="form-outline mb-4">
+            <label class="form-label" for="caption">Caption</label>
+            <input type="password" id="restaurant" name="caption" class="form-control" />
+         </div>
+
+         <!-- Picture input -->
+         <div class="form-outline mb-4">  
+            <label class="form-label" for="pw">Picture</label>
+            <input type="file" name="image">
+         </div>
+      
+         
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4">Create Post</button>
+    </form>
+</div>
+
 
 <!-- START FOOTER -->
 <footer class="mt-auto text-center">

@@ -54,6 +54,7 @@
 
 
 <div class = "contact" style='font-family: oswald;'>
+
       <!-- <h1>Contact Us!</h1>
       <p class = "text-center">Saahir, Shaojie(Sean), Melvin, and Keshav are all students at The University of Texas at Austin.
       Saahir, Sean, and Keshav are majoring in Mathematics, while Melvin is pursuing a degree in Management Information Systems.
