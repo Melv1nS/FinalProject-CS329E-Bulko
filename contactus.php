@@ -41,9 +41,20 @@
          If you have any questions, don't hesitate to email us at foodies@gmail.com !</p>
 
          <p>Contact the Members!</p>
-         <p>Saahir: saahirjanmohamed@gmail.com
-            <br>Foodie Account: @saahir
-         </p>
+         <div class="card1">
+            <div class="flip-card">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <img src="saahir_pfp.jpg" alt="Avatar" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                     <h1>Saahir Janmohamed</h1>
+                     <p>E-mail: saahirjanmohamed@gmail.com</p>
+                     <p>Foodie Username: @saahir</p>
+                  </div>
+               </div>
+            </div>
+         </div>
          <p>Shaojie: shaojiehou@utexas.edu
             <br>Foodie Account: @shaojie
          </p>
