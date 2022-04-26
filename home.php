@@ -46,10 +46,10 @@
       </ul>
   </div>
 </nav>
-         
-<div class = "home-content">
+
+<div class="mx-auto text-center" style="margin-top: 5%">
    <img class="centerlogo" src="images/logo.png" alt="logo in the center">
-   <p id="welcome">
+   <p id="welcome" style="color: #F9858B; font-weight: bold;">
       <!-- Food with friends. It doesn’t get any better than this. -->
    </p>
 
@@ -79,9 +79,7 @@
       }
    }
 
-   setTimeout(function(){
-      window.location.reload(1);
-   }, 5000);
+   typeWriter();
 </script>
 
 <!-- START FOOTER -->
