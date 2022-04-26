@@ -45,7 +45,7 @@
             <div class="flip-card">
                <div class="flip-card-inner">
                   <div class="flip-card-front">
-                     <img src="saahir_pfp.jpg" alt="Avatar" style="width:300px;height:300px;">
+                     <img src="images/saahir_pfp.jpg" alt="Avatar" style="width:300px;height:300px;">
                   </div>
                   <div class="flip-card-back">
                      <h1>Saahir Janmohamed</h1>
