@@ -46,77 +46,41 @@
       </ul>
   </div>
 </nav>
-            <!-- <li class="nav-li"></li> -->
-            <div class="topnav">
-               <a class="active" href="home.php"><img class = "logo" src="images/logo.png" alt="Logo of Foodies"></a>
-               <a href="explore.php">Explore</a>
-               <a href="contactus.php">Contact</a>
-               <a href="faq.php">FAQs</a>
-               <a href="post.php">Create Post</a>
-               <?php echo "<p class='topnav-name push'> Hello " . $_COOKIE["user"] . "</p>"?>
-               <a href="signout.php">Sign Out</a>
-            </div>
-   
-         </div>
          
-         <div class = "home-content">
-            <img class="centerlogo" src="logo.png" alt="logo in the center">
-            <p id="welcome">
-               <!-- Food with friends. It doesn’t get any better than this. -->
-            </p>
-   
-            <p>
-               Foodies unite! There's finally a social media centered around food pictures and food pictures only! 
-               <br>No more wasting time scrolling through countless memes and vacation pics just to find the good stuff!
-               <br>Connect with your friends and see all the cool resturaunts they go to and the dishes they get!
-               <br>Create an account now to start your foodie adventure!
-            </p>
-         </div>
+<div class = "home-content">
+   <img class="centerlogo" src="images/logo.png" alt="logo in the center">
+   <p id="welcome">
+      <!-- Food with friends. It doesn’t get any better than this. -->
+   </p>
 
-      </div>
-      
-      <!-- <div class="content-wrap"> 
-         <div class = "body">
-      
-            <img class="centerlogo" src="logo.png" alt="logo in the center">
-            <p>Food with friends.<br>It doesn’t get any better than this.</p>
-      
-            <p>
-               Foodies unite! There's finally a social media centered around food pictures and food pictures only! 
-               <br>No more wasting time scrolling through countless memes and vacation pics just to find the good stuff!
-               <br>Connect with your friends and see all the cool resturaunts they go to and the dishes they get!
-               <br>Create an account now to start your foodie adventure!
-            </p>
-            
-         </div>
-      </div> -->
-
-      <script>
-      var i = 0;
-      var txt = 'Food with friends. It doesn’t get any better than this.';
-      var speed = 50;
-
-      // setInterval(typeWriter, 1000);
-
-      function typeWriter() {
-      if (i < txt.length) {
-         document.getElementById("welcome").innerHTML += txt.charAt(i);
-         i++;
-         setTimeout(typeWriter, speed);
-      }
-      }
-
-      setTimeout(function(){
-      window.location.reload(1);
-      }, 5000);
-      </script>
-      
-      <footer>
-         <p>3/28/2022 Melvin, Keshav, Saahir, Sean</p>
-      </footer>
-   </div>
- 
+   <p>
+      Foodies unite! There's finally a social media centered around food pictures and food pictures only! 
+      <br>No more wasting time scrolling through countless memes and vacation pics just to find the good stuff!
+      <br>Connect with your friends and see all the cool resturaunts they go to and the dishes they get!
+      <br>Create an account now to start your foodie adventure!
+   </p>
 </div>
+
+<script>
+   var i = 0;
+   var txt = 'Food with friends. It doesn’t get any better than this.';
+   var speed = 50;
+
+   // setInterval(typeWriter, 1000);
+
+   function typeWriter() {
+   if (i < txt.length) {
+      document.getElementById("welcome").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+   }
+
+   }
+
+   setTimeout(function(){
+      window.location.reload(1);
+   }, 5000);
+</script>
 
 <!-- START FOOTER -->
 <footer class="mt-auto text-center">
