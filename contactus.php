@@ -48,9 +48,9 @@
                      <img src="images/saahir_pfp.jpg" alt="Avatar" style="width:300px;height:300px;">
                   </div>
                   <div class="flip-card-back">
-                     <h1>Saahir Janmohamed</h1>
-                     <p>E-mail: saahirjanmohamed@gmail.com</p>
-                     <p>Foodie Username: @saahir</p>
+                     <p>Saahir Janmohamed</p>
+                     <p id="cardtext">E-mail: saahirjanmohamed@gmail.com</p>
+                     <p id="cardtext">Foodie Username: @saahir</p>
                   </div>
                </div>
             </div>
