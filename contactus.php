@@ -52,7 +52,33 @@
   </div>
 </nav>
 
-<!-- END HEADER -->
+         <p>Contact the Members!</p>
+         <div class="card1">
+            <div class="flip-card">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <img src="images/saahir_pfp.jpg" alt="Avatar" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                     <h1>Saahir Janmohamed</h1>
+                     <p>E-mail: saahirjanmohamed@gmail.com</p>
+                     <p>Foodie Username: @saahir</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <p>Shaojie: shaojiehou@utexas.edu
+            <br>Foodie Account: @shaojie
+         </p>
+         <P>Melvin: melvin.sureshbabu@gmail.com
+            <br>Foodie Account: @melvin 
+         </P>
+         <p>Keshav: kshavt@gmail.com
+            <br>Foodie Account: @keshav
+         </p>
+      
+      </div>
+   </div>
 
 <div class = "contact" style='font-family: oswald;'>
       <h1>Contact Us!</h1>
