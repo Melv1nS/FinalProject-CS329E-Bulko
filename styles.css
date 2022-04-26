@@ -322,10 +322,18 @@ footer {
 
 /* Flipping Card */
 
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .flip-card {
+    float: left;
+    margin: 0 50px 50px 0px;
     background-color: transparent;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; 
   }
@@ -357,9 +365,16 @@ footer {
   }
   
   .flip-card-back {
-    background-color: dodgerblue;
+    background-color: #F9858B;
     color: white;
     transform: rotateY(180deg);
   }
   
+  
+#cardtext {
+    font-size: 20px;
+}
+
+
+.clearboth { clear: both; }
 

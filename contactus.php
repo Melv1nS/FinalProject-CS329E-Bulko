@@ -52,33 +52,6 @@
   </div>
 </nav>
 
-         <p>Contact the Members!</p>
-         <div class="card1">
-            <div class="flip-card">
-               <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                     <img src="images/saahir_pfp.jpg" alt="Avatar" style="width:300px;height:300px;">
-                  </div>
-                  <div class="flip-card-back">
-                     <p>Saahir Janmohamed</p>
-                     <p id="cardtext">E-mail: saahirjanmohamed@gmail.com</p>
-                     <p id="cardtext">Foodie Username: @saahir</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <p>Shaojie: shaojiehou@utexas.edu
-            <br>Foodie Account: @shaojie
-         </p>
-         <P>Melvin: melvin.sureshbabu@gmail.com
-            <br>Foodie Account: @melvin 
-         </P>
-         <p>Keshav: kshavt@gmail.com
-            <br>Foodie Account: @keshav
-         </p>
-      
-      </div>
-   </div>
 
 <div class = "contact" style='font-family: oswald;'>
       <h1>Contact Us!</h1>
@@ -87,19 +60,67 @@
       They decided to create Foodies based off their passion for finding good food, as well as their shared interest in web programming.
       If you have any questions, don't hesitate to email us at foodies@gmail.com !</p>
 
-      <p>Contact the Members!</p>
-      <p>Saahir: saahirjanmohamed@gmail.com
-         <br>Foodie Account: @saahir
-      </p>
-      <p>Shaojie: shaojiehou@utexas.edu
-         <br>Foodie Account: @shaojie
-      </p>
-      <P>Melvin: melvin.sureshbabu@gmail.com
-         <br>Foodie Account: @melvin 
-      </P>
-      <p>Keshav: kshavt@gmail.com
-         <br>Foodie Account: @keshav
-      </p>
+      <h1>Our Members!</h1>
+         <div class= "cards">
+         <div class="card1">
+            <div class="flip-card">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <img src="images/saahir_pfp.jpg" alt="Avatar" style="width:400px;height:400px;">
+                  </div>
+                  <div class="flip-card-back">
+                     <p><br><br>Saahir Janmohamed</p>
+                     <p id ="cardtext">E-Mail: saahirjanmohamed@gmail.com</p>
+                     <p id ="cardtext">Foodie Account: @saahir</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="card2">
+            <div class="flip-card">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <img src="images/sean_pfp.JPG" alt="Avatar" style="width:400px;height:400px;">
+                  </div>
+                  <div class="flip-card-back">
+                     <p><br><br>Shaojie Hou</p>
+                     <p id ="cardtext">E-Mail: shaojiehou@utexas.edu</p>
+                     <p id ="cardtext">Foodie Account: @shaojie</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <br class="clearboth">
+         <div class="card3">
+            <div class="flip-card">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <img src="images/melvin_pfp.jpg" alt="Avatar" style="width:400px;height:400px;">
+                  </div>
+                  <div class="flip-card-back">
+                     <p><br><br>Melvin Suresh</p>
+                     <p id ="cardtext">E-Mail: melvin.sureshbabu@gmail.com</p>
+                     <p id ="cardtext">Foodie Account: @melvin </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="card4">
+            <div class="flip-card">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <img src="images/keshav_pfp.JPG" alt="Avatar" style="width:400px;height:400px;">
+                  </div>
+                  <div class="flip-card-back">
+                     <p><br><br>Keshav Thamalla</p>
+                     <p id ="cardtext">E-Mail: kshavt@gmail.com</p>
+                     <p id ="cardtext">Foodie Account: @keshav </p>
+                  </div>
+               </div>
+            </div>
+         </div>     
+      </div>
+   </div>
 </div>
 
 <!-- START FOOTER -->
