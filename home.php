@@ -62,6 +62,9 @@
 </div>
 
 <script>
+   console.log('hello')
+
+   //TYPE WRITING IS NOT WORKING
    var i = 0;
    var txt = 'Food with friends. It doesn’t get any better than this.';
    var speed = 50;
@@ -69,12 +72,11 @@
    // setInterval(typeWriter, 1000);
 
    function typeWriter() {
-   if (i < txt.length) {
-      document.getElementById("welcome").innerHTML += txt.charAt(i);
-      i++;
-      setTimeout(typeWriter, speed);
-   }
-
+      if (i < txt.length) {
+         document.getElementById("welcome").innerHTML += txt.charAt(i);
+         i++;
+         setTimeout(typeWriter, speed);
+      }
    }
 
    setTimeout(function(){
