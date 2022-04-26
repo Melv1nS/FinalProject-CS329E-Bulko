@@ -63,6 +63,34 @@
         </div>
       </div>
 
+      <?php
+        echo "<form name='contactform' onsubmit='submitFeedback()'> 
+        <label id='name' value='Name:'><input value='nameinput' name='name'></label> 
+        <label id='name' value='Email:'><input value='emailad' name='email'></label> 
+        <label id='name' value='Message:'><input value='comment' name='comment'></label> 
+        <label type='button' id='submit' value = 'Submit' onclick='submitFeedback()'></label>
+        </form>
+        
+        <script>
+          function submitFeedback(){
+            let name = document.forms['contactform']['name'].value;
+            let email = document.forms['contactform']['email'].value;
+            let comment = document.forms['contactform']['comment'].value;
+            if (name == '' || email='' || comment=''){
+              alert('You have not filled out all required fields in the form');
+            
+            else(){ <?php
+
+              $myfile = fopen('comments.txt', 'w') or die('Unable to open file!');
+
+            ?>
+              
+            }
+          }
+        </script>
+
+      ?>
+
       <footer>
         <p>3/6/2022 Melvin, Keshav, Saahir, Sean</p>
       </footer> 
