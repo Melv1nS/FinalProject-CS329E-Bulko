@@ -11,7 +11,8 @@
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
 </head> 
 
-<body>
+<body onload="typeWriter()">
+
 <!-- BODY GOES HERE -->
 
    <div class = "page-container">
@@ -34,8 +35,8 @@
          
          <div class = "home-content">
             <img class="centerlogo" src="logo.png" alt="logo in the center">
-            <p>
-               Food with friends. It doesn’t get any better than this.
+            <p id="welcome">
+               <!-- Food with friends. It doesn’t get any better than this. -->
             </p>
    
             <p>
@@ -63,6 +64,26 @@
             
          </div>
       </div> -->
+
+      <script>
+      var i = 0;
+      var txt = 'Food with friends. It doesn’t get any better than this.';
+      var speed = 50;
+
+      // setInterval(typeWriter, 1000);
+
+      function typeWriter() {
+      if (i < txt.length) {
+         document.getElementById("welcome").innerHTML += txt.charAt(i);
+         i++;
+         setTimeout(typeWriter, speed);
+      }
+      }
+
+      setTimeout(function(){
+      window.location.reload(1);
+      }, 5000);
+      </script>
       
       <footer>
          <p>3/28/2022 Melvin, Keshav, Saahir, Sean</p>
