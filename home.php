@@ -46,23 +46,6 @@
       </ul>
   </div>
 </nav>
-
-<<<<<<< HEAD
-<!-- END HEADER -->
-
-<div class = "home-content">
-   <img class="centerlogo" src="images/logo.png" alt="logo in the center">
-   <p>
-      Food with friends. It doesn’t get any better than this.
-   </p>
-
-   <p>
-      Foodies unite! There's finally a social media centered around food pictures and food pictures only! 
-      <br>No more wasting time scrolling through countless memes and vacation pics just to find the good stuff!
-      <br>Connect with your friends and see all the cool resturaunts they go to and the dishes they get!
-      <br>Create an account now to start your foodie adventure!
-   </p>
-=======
             <!-- <li class="nav-li"></li> -->
             <div class="topnav">
                <a class="active" href="home.php"><img class = "logo" src="images/logo.png" alt="Logo of Foodies"></a>
@@ -133,7 +116,6 @@
       </footer>
    </div>
  
->>>>>>> 66aa69d1f2cef694fabb90dc209c5b650c8ea045
 </div>
 
 <!-- START FOOTER -->
