@@ -10,8 +10,10 @@
 
    <link href="bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet">
    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"> -->
    <link rel="stylesheet" href="styles.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
    
    <style type = "text/css">
     .img1,.img2,.img3 {position: absolute; top: 70px; left: 150px; z-index: 0;}
@@ -74,6 +76,34 @@
             },3000)
 
    </script>
+   <script>
+      function like(element) {
+
+         //add logic to get number of likes
+
+         var icon = element.children[0];
+
+         if (icon.style.color == "") {
+            icon.style = "color:red";
+            var numLikes = parseInt(element.textContent) + 1
+            element.textContent = numLikes + " ";
+            element.appendChild(icon);
+         }
+         else {
+            icon.style = "color:";
+            var numLikes = parseInt(element.textContent) - 1
+            element.textContent = numLikes + " ";
+            element.appendChild(icon);
+         }
+         
+      }
+
+      function profile(element) {
+         var icon = element.children[0];
+
+         alert('Add functionality to redirect to profile page')
+      }
+   </script>
 </head> 
 
 <body class="d-flex flex-column min-vh-100">
@@ -113,7 +143,136 @@
 
 <!-- END HEADER -->
 
-   <div class = "explorebody">
+<div class="card-container">
+   <div class="card mb-3" style="max-width: 1000px;">
+      <div class="row no-gutters">
+         <div class="col-md-4">
+            <img src="images/food1.png" class="card-img" alt="...">
+         </div>
+         <div class="col-md-8">
+            <div class="card-body">
+               <h5 class="card-title">Restaurant</h5>
+               <p class="card-text">Food Caption will go here!</p>
+               <div class="row">
+                  <div class="col-md-4">
+                     <a class="btn" onclick = "like(this)">0 <i class="fa fa-heart"></i></a>
+                     <a class="btn" onclick = "profile(this)"><i class="fa-regular fa-user"></i> User </a>
+                  </div>
+                  <div class="col-md-8">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="card mb-3" style="max-width: 1000px;">
+      <div class="row no-gutters">
+         <div class="col-md-4">
+            <img src="images/food2.png" class="card-img" alt="...">
+         </div>
+         <div class="col-md-8">
+            <div class="card-body">
+               <h5 class="card-title">Restaurant</h5>
+               <p class="card-text">Food Caption will go here!</p>
+               <div class="row">
+                  <div class="col-md-4">
+                     <a class="btn" onclick = "like(this)">0 <i class="fa fa-heart"></i></a>
+                     <a class="btn" onclick = "profile(this)"><i class="fa-regular fa-user"></i> User </a>
+                  </div>
+                  <div class="col-md-8">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="card mb-3" style="max-width: 1000px;">
+      <div class="row no-gutters">
+         <div class="col-md-4">
+            <img src="images/food3.png" class="card-img" alt="...">
+         </div>
+         <div class="col-md-8">
+            <div class="card-body">
+               <h5 class="card-title">Restaurant</h5>
+               <p class="card-text">Food Caption will go here!</p>
+               <div class="row">
+                  <div class="col-md-4">
+                     <a class="btn" onclick = "like(this)">0 <i class="fa fa-heart"></i></a>
+                     <a class="btn" onclick = "profile(this)"><i class="fa-regular fa-user"></i> User </a>
+                  </div>
+                  <div class="col-md-8">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="card mb-3" style="max-width: 1000px;">
+      <div class="row no-gutters">
+         <div class="col-md-4">
+            <img src="images/food4.png" class="card-img" alt="...">
+         </div>
+         <div class="col-md-8">
+            <div class="card-body">
+               <h5 class="card-title">Restaurant</h5>
+               <p class="card-text">Food Caption will go here!</p>
+               <div class="row">
+                  <div class="col-md-4">
+                     <a class="btn" onclick = "like(this)">0 <i class="fa fa-heart"></i></a>
+                     <a class="btn" onclick = "profile(this)"><i class="fa-regular fa-user"></i> User </a>
+                  </div>
+                  <div class="col-md-8">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="card mb-3" style="max-width: 1000px;">
+      <div class="row no-gutters">
+         <div class="col-md-4">
+            <img src="images/food5.png" class="card-img" alt="...">
+         </div>
+         <div class="col-md-8">
+            <div class="card-body">
+               <h5 class="card-title">Restaurant</h5>
+               <p class="card-text">Food Caption will go here!</p>
+               <div class="row">
+                  <div class="col-md-4">
+                     <a class="btn" onclick = "like(this)">0 <i class="fa fa-heart"></i></a>
+                     <a class="btn" onclick = "profile(this)"><i class="fa-regular fa-user"></i> User </a>
+                  </div>
+                  <div class="col-md-8">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="card mb-3" style="max-width: 1000px;">
+      <div class="row no-gutters">
+         <div class="col-md-4">
+            <img src="images/food6.png" class="card-img" alt="...">
+         </div>
+         <div class="col-md-8">
+            <div class="card-body">
+               <h5 class="card-title">Restaurant</h5>
+               <p class="card-text">Food Caption will go here!</p>
+               <div class="row">
+                  <div class="col-md-4">
+                     <a class="btn" onclick = "like(this)">0 <i class="fa fa-heart"></i></a>
+                     <a class="btn" onclick = "profile(this)"><i class="fa-regular fa-user"></i> User </a>
+                  </div>
+                  <div class="col-md-8">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+   <!-- <div class = "explorebody">
       <form action = "">
             <p>
                <img class = "img1"  id = "food1" src = "images/food1.png"
@@ -174,7 +333,7 @@
          </div>
 
       </div>
-   </div>
+   </div> -->
 
 <!-- START FOOTER -->
    <footer class="mt-auto text-center">

@@ -8,7 +8,15 @@ body {
     font-family: 'rubik', sans-serif;
 }
 
+
 /* Aligns the heading text to the center. */
+
+.card-container {
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+}
  
 h1 {
     text-align: center;

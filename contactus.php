@@ -37,14 +37,9 @@
          </li>
       </ul>
       <ul class="navbar-nav ms-auto">
-        <ul class="navbar-nav ms-auto">
-            <?php 
-               echo "<a class='navbar-brand'> Hello " . $_COOKIE["user"] . "</a>"
-            ?>
-            <li class="nav-item">
-               <a class="nav-link" href="signout.php"> Sign Out</a>
-            </li>
-         </ul>
+         <?php 
+            echo "<a class='navbar-brand'> Hello " . $_COOKIE["user"] . "</a>"
+         ?>
          <li class="nav-item">
             <a class="nav-link" href="signout.php"> Sign Out</a>
          </li>
