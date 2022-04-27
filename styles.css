@@ -387,3 +387,21 @@ footer {
 
 .clearboth { clear: both; }
 
+a:link {
+    color: white;
+    background-color: transparent;
+  }
+  
+  a:visited {
+    color: white;
+    background-color: transparent;
+  }
+
+  #cardtitle {
+      font-size: 28px;
+  }
+
+hr {
+    background-color: white;
+    border-color: white;
+}
