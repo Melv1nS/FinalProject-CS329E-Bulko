@@ -214,12 +214,12 @@
          </div>
          <div class="col-md-8">
             <div class="card-body">
-               <h5 class="card-title">Restaurant</h5>
-               <p class="card-text">Food Caption will go here!</p>
+               <h5 class="card-title">The Lamb Shop</h5>
+               <p class="card-text">Lamb chops from The Lamb Shop!</p>
                <div class="row">
                   <div class="col-md-4">
                      <a class="btn" onclick = "like(this)">0 <i class="fa fa-heart"></i></a>
-                     <a class="btn" onclick = "profile(this)"><i class="fa-regular fa-user"></i> User </a>
+                     <a class="btn" onclick = "profile(this)"><i class="fa-regular fa-user"></i> Hasan </a>
                   </div>
                   <div class="col-md-8">
                   </div>
@@ -235,12 +235,12 @@
          </div>
          <div class="col-md-8">
             <div class="card-body">
-               <h5 class="card-title">Restaurant</h5>
-               <p class="card-text">Food Caption will go here!</p>
+               <h5 class="card-title">Akhsheiy's Grill</h5>
+               <p class="card-text">Love the steak, it was absolute heat!</p>
                <div class="row">
                   <div class="col-md-4">
                      <a class="btn" onclick = "like(this)">0 <i class="fa fa-heart"></i></a>
-                     <a class="btn" onclick = "profile(this)"><i class="fa-regular fa-user"></i> User </a>
+                     <a class="btn" onclick = "profile(this)"><i class="fa-regular fa-user"></i> Terry </a>
                   </div>
                   <div class="col-md-8">
                   </div>
@@ -256,12 +256,12 @@
          </div>
          <div class="col-md-8">
             <div class="card-body">
-               <h5 class="card-title">Restaurant</h5>
-               <p class="card-text">Food Caption will go here!</p>
+               <h5 class="card-title">Omar's Persian Grill</h5>
+               <p class="card-text">Mediterranean? More like MID-iterranean!</p>
                <div class="row">
                   <div class="col-md-4">
                      <a class="btn" onclick = "like(this)">0 <i class="fa fa-heart"></i></a>
-                     <a class="btn" onclick = "profile(this)"><i class="fa-regular fa-user"></i> User </a>
+                     <a class="btn" onclick = "profile(this)"><i class="fa-regular fa-user"></i> Aidan </a>
                   </div>
                   <div class="col-md-8">
                   </div>
