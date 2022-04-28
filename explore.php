@@ -151,12 +151,12 @@
          </div>
          <div class="col-md-8">
             <div class="card-body">
-               <h5 class="card-title">Restaurant</h5>
-               <p class="card-text">Food Caption will go here!</p>
+               <h5 class="card-title">Tikka Hut</h5>
+               <p class="card-text">Just had the best butter chicken ever!</p>
                <div class="row">
                   <div class="col-md-4">
                      <a class="btn" onclick = "like(this)">0 <i class="fa fa-heart"></i></a>
-                     <a class="btn" onclick = "profile(this)"><i class="fa-regular fa-user"></i> User </a>
+                     <a class="btn" onclick = "profile(this)"><i class="fa-regular fa-user"></i> Jake </a>
                   </div>
                   <div class="col-md-8">
                   </div>
@@ -172,12 +172,12 @@
          </div>
          <div class="col-md-8">
             <div class="card-body">
-               <h5 class="card-title">Restaurant</h5>
-               <p class="card-text">Food Caption will go here!</p>
+               <h5 class="card-title">Amy's Fine Eats</h5>
+               <p class="card-text">The chicken was cooked perfectly! Definitely will return!</p>
                <div class="row">
                   <div class="col-md-4">
                      <a class="btn" onclick = "like(this)">0 <i class="fa fa-heart"></i></a>
-                     <a class="btn" onclick = "profile(this)"><i class="fa-regular fa-user"></i> User </a>
+                     <a class="btn" onclick = "profile(this)"><i class="fa-regular fa-user"></i> Emily </a>
                   </div>
                   <div class="col-md-8">
                   </div>
@@ -193,12 +193,12 @@
          </div>
          <div class="col-md-8">
             <div class="card-body">
-               <h5 class="card-title">Restaurant</h5>
-               <p class="card-text">Food Caption will go here!</p>
+               <h5 class="card-title">Fire Thai</h5>
+               <p class="card-text">Shrimp pad thai!!!!</p>
                <div class="row">
                   <div class="col-md-4">
                      <a class="btn" onclick = "like(this)">0 <i class="fa fa-heart"></i></a>
-                     <a class="btn" onclick = "profile(this)"><i class="fa-regular fa-user"></i> User </a>
+                     <a class="btn" onclick = "profile(this)"><i class="fa-regular fa-user"></i> Natalie </a>
                   </div>
                   <div class="col-md-8">
                   </div>
