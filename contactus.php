@@ -66,8 +66,10 @@
                         <img src="images/saahir_pfp.jpg" alt="Avatar" style="width:400px;height:400px;">
                      </div>
                      <div class="flip-card-back">
-                        <p><br><br>Saahir Janmohamed</p>
-                        <p id ="cardtext">E-Mail: saahirjanmohamed@gmail.com</p>
+                        <p id= "cardtitle"><br>Saahir Janmohamed</p>
+                        <p><hr size ="5"></p>
+                        <P id ="cardtext">Saahir is a math major at UT Austin. His hobbies include eating (obviously!), working out, and reading manga.</p>
+                        <p id ="cardtext"><a href="mailto:saahirjanmohamed@gmail.com?subject=Foodies Message!">E-Mail: saahirjanmohamed@gmail.com</a></p>
                         <p id ="cardtext">Foodie Account: @saahir</p>
                      </div>
                   </div>
@@ -80,8 +82,10 @@
                         <img src="images/sean_pfp.JPG" alt="Avatar" style="width:400px;height:400px;">
                      </div>
                      <div class="flip-card-back">
-                        <p><br><br>Shaojie Hou</p>
-                        <p id ="cardtext">E-Mail: shaojiehou@utexas.edu</p>
+                        <p id= "cardtitle"><br>Shaojie Hou</p>
+                        <p><hr size ="5"></p>
+                        <P id ="cardtext">Shaojie is a math major at UT Austin. His hobbies include eating (obviously!), photography, and playing video games.</p>
+                        <p id ="cardtext"><a href="mailto:shaojiehou@utexas.edu?subject=Foodies Message!">E-Mail: shaojiehou@utexas.edu</a></p>
                         <p id ="cardtext">Foodie Account: @shaojie</p>
                      </div>
                   </div>
@@ -99,8 +103,10 @@
                         <img src="images/melvin_pfp.jpg" alt="Avatar" style="width:400px;height:400px;">
                      </div>
                      <div class="flip-card-back">
-                        <p><br><br>Melvin Suresh</p>
-                        <p id ="cardtext">E-Mail: melvin.sureshbabu@gmail.com</p>
+                        <p id= "cardtitle"><br>Melvin Suresh</p>
+                        <p><hr size ="5"></p>
+                        <P id ="cardtext">Melvin is a MIS major at UT Austin. His hobbies include playing piano, being a foodie, and playing video games.</p>
+                        <p id ="cardtext"><a href="mailto:melvin.sureshbabu@gmail.com?subject=Foodies Message!">E-Mail: melvin.sureshbabu@gmail.com</a></p>
                         <p id ="cardtext">Foodie Account: @melvin </p>
                      </div>
                   </div>
@@ -113,8 +119,10 @@
                         <img src="images/keshav_pfp.JPG" alt="Avatar" style="width:400px;height:400px;">
                      </div>
                      <div class="flip-card-back">
-                        <p><br><br>Keshav Thamalla</p>
-                        <p id ="cardtext">E-Mail: kshavt@gmail.com</p>
+                        <p id= "cardtitle"><br>Keshav Thamalla</p>
+                        <p><hr size ="5"></p>
+                        <P id ="cardtext">Keshav is a math major at UT Austin. His hobbies include eating (obviously!), running, and watching TV.</p>
+                        <p id ="cardtext"><a href="mailto:kshavt@gmail.com?subject=Foodies Message!">E-Mail: kshavt@gmail.com</a></p>
                         <p id ="cardtext">Foodie Account: @keshav </p>
                      </div>
                   </div>
