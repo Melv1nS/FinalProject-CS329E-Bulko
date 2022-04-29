@@ -18,33 +18,33 @@
 
 <!-- START HEADER -->
 <nav class="navbar navbar-expand-lg navbar-custom">
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto">
-            <li class="nav-item">
+   <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+         <li class="nav-item">
             <a class="nav-link" href="home.php"><img src="images/blacklogo.png" width="30" height="30" alt="" /></a>
-            </li>
-            <li class="nav-item">
+         </li>
+         <li class="nav-item">
             <a class="nav-link" href="explore.php">Explore</a>
-            </li>
-            <li class="nav-item">
+         </li>
+         <li class="nav-item">
             <a class="nav-link" href="contactus.php">Contact</a>
-            </li>
-            <li class="nav-item active">
+         </li>
+         <li class="nav-item active">
             <a class="nav-link" href="faq.php">FAQ</a>
-            </li>
-            <li class="nav-item ">
+         </li>
+         <li class="nav-item">
             <a class="nav-link" style="color: white" href="post.php">Create Post</a>
-            </li>
-        </ul>
-        <ul class="navbar-nav ms-auto">
-            <?php 
-                echo "<a class='navbar-brand'> Hello " . $_COOKIE["user"] . "</a>"
-            ?>
-            <li class="nav-item">
-                <a class="nav-link" href="signout.php"> Sign Out</a>
-            </li>
-        </ul>
-    </div>
+         </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+         <?php 
+            echo "<a class='navbar-brand'> Hello " . $_COOKIE["user"] . "</a>"
+         ?>
+         <li class="nav-item">
+            <a class="nav-link" href="signout.php"> Sign Out</a>
+         </li>
+      </ul>
+   </div>
 </nav>
 
 <!-- END HEADER -->
@@ -52,7 +52,6 @@
 <!--
     PLACE YOUR CONTENT HERE
 -->
-
 <div class="m-4">
     <h1>FAQ</h1>
     <div class="accordion" id="myAccordion">

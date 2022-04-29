@@ -53,7 +53,7 @@
       <!-- Food with friends. It doesn’t get any better than this. -->
    </p>
 
-   <p id='rcorners'>
+   <p>
       Foodies unite! There's finally a social media centered around food pictures and food pictures only! 
       <br>No more wasting time scrolling through countless memes and vacation pics just to find the good stuff!
       <br>Connect with your friends and see all the cool resturaunts they go to and the dishes they get!

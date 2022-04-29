@@ -67,7 +67,7 @@
          <!-- Caption input -->
          <div class="form-outline mb-4">
             <label class="form-label" for="caption">Caption</label>
-            <input type="password" id="restaurant" name="caption" class="form-control" />
+            <input type="text" id="restaurant" name="caption" class="form-control" />
          </div>
 
          <!-- Picture input -->

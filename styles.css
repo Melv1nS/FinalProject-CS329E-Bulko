@@ -396,12 +396,12 @@ footer {
 
 .clearboth { clear: both; }
 
-a:link {
+.flip-card a:link {
     color: white;
     background-color: transparent;
   }
   
-  a:visited {
+.flip-card a:visited {
     color: white;
     background-color: transparent;
   }
