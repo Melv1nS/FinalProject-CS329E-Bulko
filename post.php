@@ -72,8 +72,8 @@
 
          <!-- Picture input -->
          <div class="form-outline mb-4">  
-            <label class="form-label" for="pw">Picture</label>
-            <input type="file" name="image">
+            <label class="form-label" for="pw">Link to Picture</label>
+            <input type="url" name="image">
          </div>
       
          
