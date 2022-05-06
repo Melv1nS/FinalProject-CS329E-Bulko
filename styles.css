@@ -9,6 +9,14 @@ body {
 }
 
 
+.foodies-ajax {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: #BD5059;
+    padding: 30px;
+}
+
 /* Aligns the heading text to the center. */
 
 .card-container {

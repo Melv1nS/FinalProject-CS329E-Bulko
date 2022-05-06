@@ -11,11 +11,21 @@
    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"> -->
    <link rel="stylesheet" href="styles.css">
+   <script>
+      function loadDoc() {
+         const xhttp = new XMLHttpRequest();
+         xhttp.onload = function() {
+            document.getElementById("demo").innerHTML =
+            this.responseText;
+         }
+         xhttp.open("GET", "foodies_usernames.txt");
+         xhttp.send();
+      }
+   </script>
 </head> 
 
 
 <body class="d-flex flex-column min-vh-100">
-
 <!-- START HEADER -->
 <nav class="navbar navbar-expand-lg navbar-custom">
    <div class="collapse navbar-collapse" id="navbarNav">
@@ -46,6 +56,9 @@
       </ul>
   </div>
 </nav>
+
+
+
 
 
 <div class = "contact" style='font-family: oswald;'>
@@ -131,6 +144,11 @@
          </div>
   
       </div>
+
+      <div id="demo" class="foodies-ajax">
+         <button class="btn btn-primary btn-block mb-4" type="button" onclick="loadDoc()">Click to see our foodies usernames!</button>
+      </div>
+
    </div>
 </div>
 

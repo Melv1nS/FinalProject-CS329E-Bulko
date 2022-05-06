@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php 
+   header('Access-Control-Allow-Origin: *');
+   header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
+   header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');
+?>
 
 <html lang="en">
 
@@ -14,67 +18,20 @@
    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"> -->
    <link rel="stylesheet" href="styles.css">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
-   
-   <style type = "text/css">
-    .img1,.img2,.img3 {position: absolute; top: 70px; left: 150px; z-index: 0;}
-    .img4,.img5,.img6 {position: absolute; top: 430px; left: 150px; z-index: 0;}
-    .likeimg1{position: absolute; top: 80px; left: 1100px; z-index: 0;}
-    .likeimg2{position: absolute; top: 440px; left: 1100px; z-index: 0;}
-    .headpic1{position: absolute; top: 80px; left: 750px; z-index: 0;}
-    .headpic2{position: absolute; top: 440px; left: 750px; z-index: 0;}
-    #name1{position: absolute; top: 70px; left: 790px; z-index: 0;}
-    #name2{position: absolute; top: 430px; left: 790px; z-index: 0;}
-    #c1{position: absolute; top: 130px; left: 750px; z-index: 0;}
-    #c2{position: absolute; top: 480px; left: 750px; z-index: 0;}
-    .content{font-family: initial;}
-    .explorebody{border-style: ridge;
-                border-width: 4px;
-                padding-bottom: 370px;
-            }
 
-    #line {
-        height: .5px;
-        background-color: rgb(32, 34, 42);
-        margin-top: 365px;
-    }
-
-  </style>
-     <script>
-        var top_img1 = "food1";
-        var top_img2 = "food4";
-        var img_src1 = new Array ("food1", "food2", "food3");
-        var img_src2 = new Array ("food4","food5","food6");
-        i = 0;
-
-        setInterval(function changeImg() {
-            
-            var new_img1 = img_src1[i];
-            var new_img2 = img_src2[i];
-
-            if (i < img_src1.length){
-                i++;
-            }
-            if (i == img_src1.length){
-                i = 0;
-            }
-            styleTop1 = document.getElementById(top_img1).style;
-            styleNew1 = document.getElementById(new_img1).style;
-
-            styleTop2 = document.getElementById(top_img2).style;
-            styleNew2 = document.getElementById(new_img2).style;
-
-            styleTop1.zIndex = "0";
-            styleNew1.zIndex = "10";
-
-            styleTop2.zIndex = "0";
-            styleNew2.zIndex = "10";
-
-            top_img1 = new_img1;
-            top_img2 = new_img2;
-
-
-            },3000)
-
+   <script>
+      var myurl = "https://cors-anywhere.herokuapp.com/https://jsonplaceholder.typicode.com/todos/1";
+      $.ajax({
+         url: myurl,
+         headers: {
+            'Authorization': 'Bearer ZcHQm0yi57KWnGDo4iFSYj5GP5DsmM413w4vphnUCVh45eqxJi1XB9KjNR-sjDGM4gdDGul2K9fBjcQPD2jK-X1hi_jDzMFpfEzpnGzLYGa6LNRxjwqrdW-xhpF0YnYx',
+         },
+         method: 'GET',
+         dataType: 'json',
+         success: function(data) {
+            console.log('success: ' + data);
+         }
+      });
    </script>
    <script>
       function like(element) {
@@ -107,6 +64,8 @@
 </head> 
 
 <body class="d-flex flex-column min-vh-100">
+
+<p></p>
 
 <!-- START HEADER -->
 <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
