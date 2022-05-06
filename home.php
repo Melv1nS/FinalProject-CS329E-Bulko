@@ -59,6 +59,11 @@
       <br>Connect with your friends and see all the cool resturaunts they go to and the dishes they get!
       <br>Create an account now to start your foodie adventure!
    </p>
+   <div>
+      <video width="500" height="400" controls poster="images/Foodies-logos.jpeg" Autoplay=>
+         <source src="images/IMG_9512.mov" type="video/mp4">
+      </video>
+   </div>
 </div>
 
 <script>
