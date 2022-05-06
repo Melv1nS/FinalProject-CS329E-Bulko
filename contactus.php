@@ -57,10 +57,6 @@
   </div>
 </nav>
 
-
-
-
-
 <div class = "contact" style='font-family: oswald;'>
 
       <!-- <h1>Contact Us!</h1>
@@ -84,6 +80,7 @@
                         <P id ="cardtext">Saahir is a math major at UT Austin. His hobbies include eating (obviously!), working out, and reading manga.</p>
                         <p id ="cardtext"><a href="mailto:saahirjanmohamed@gmail.com?subject=Foodies Message!">E-Mail: saahirjanmohamed@gmail.com</a></p>
                         <p id ="cardtext">Foodie Account: @saahir</p>
+                        <p id ="cardtext"><a href="https://www.yelp.com/user_details?userid=TARbSehWXiTofgSFovi9TA">Yelp</a></p>
                      </div>
                   </div>
                </div>
@@ -100,6 +97,7 @@
                         <P id ="cardtext">Shaojie is a math major at UT Austin. His hobbies include eating (obviously!), photography, and playing video games.</p>
                         <p id ="cardtext"><a href="mailto:shaojiehou@utexas.edu?subject=Foodies Message!">E-Mail: shaojiehou@utexas.edu</a></p>
                         <p id ="cardtext">Foodie Account: @shaojie</p>
+                        <p id ="cardtext"><a href="https://www.yelp.com/user_details?userid=3I9PIghZ2TCAE8ufL48-3Q">Yelp</a></p>
                      </div>
                   </div>
                </div>
@@ -121,6 +119,7 @@
                         <P id ="cardtext">Melvin is a MIS major at UT Austin. His hobbies include playing piano, being a foodie, and playing video games.</p>
                         <p id ="cardtext"><a href="mailto:melvin.sureshbabu@gmail.com?subject=Foodies Message!">E-Mail: melvin.sureshbabu@gmail.com</a></p>
                         <p id ="cardtext">Foodie Account: @melvin </p>
+                        <p id ="cardtext"><a href="https://www.yelp.com/user_details?userid=odDesJ78ncJNnIdc7Yl2gg">Yelp</a></p>
                      </div>
                   </div>
                </div>
@@ -137,6 +136,7 @@
                         <P id ="cardtext">Keshav is a math major at UT Austin. His hobbies include eating (obviously!), running, and watching TV.</p>
                         <p id ="cardtext"><a href="mailto:kshavt@gmail.com?subject=Foodies Message!">E-Mail: kshavt@gmail.com</a></p>
                         <p id ="cardtext">Foodie Account: @keshav </p>
+                        <p id ="cardtext"><a href="https://www.yelp.com/user_details?userid=rOGfdo9YeBS18xptfe1hrQ ">Yelp</a></p>
                      </div>
                   </div>
                </div>
