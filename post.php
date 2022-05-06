@@ -38,10 +38,10 @@
       </ul>
       <ul class="navbar-nav ms-auto">
          <?php 
-            echo "<a class='navbar-brand'> Hello " . $_COOKIE["user"] . "</a>"
+               echo "<a class='navbar-brand'> Hello " . $_COOKIE["user"] . "</a>"
          ?>
          <li class="nav-item">
-            <a class="nav-link" href="signout.php"> Sign Out</a>
+               <a class="nav-link" href="signout.php"> Sign Out</a>
          </li>
       </ul>
    </div>
@@ -67,13 +67,13 @@
          <!-- Caption input -->
          <div class="form-outline mb-4">
             <label class="form-label" for="caption">Caption</label>
-            <input type="password" id="restaurant" name="caption" class="form-control" />
+            <input type="text" id="restaurant" name="caption" class="form-control" />
          </div>
 
          <!-- Picture input -->
          <div class="form-outline mb-4">  
-            <label class="form-label" for="pw">Picture</label>
-            <input type="file" name="image">
+            <label class="form-label" for="pw">Link to Picture</label>
+            <input type="url" name="image">
          </div>
       
          
